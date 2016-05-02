@@ -1,0 +1,93 @@
+How to activate localtunnel<!--
+open a terminal
+type "lt --port {port from brackets} --subdomain vtcwally"
+-->
+
+Twitter Blue = #55acee
+
+Diego's Hexadecimal color values:<!--
+
+Background color: #FFF100 with opacity variations from 10% to 50%.
+            rgb (255, 241, 0)
+
+Lauren # 8B7A27 olive-greenish
+         rgb:(139, 122, 39)
+
+Sawayer  #00ADEF  light-blue
+          rgb:(0, 73, 239)
+
+
+Clases  #FF5B34  darker red
+rgb:(255, 91, 52)
+-->
+
+Attempts at getting the border radii of the top and bottom left buttons 
+of the Philosophy angular section to each have one rounded corner under all conditions.
+It worked, except for the when the tab was active but cursor hovered on a non-active tab
+<!--
+#practiceTab,
+#practiceTab a:hover {
+ border-radius: 0px 0px 0px 10px; 
+}
+
+#planTab li.active,
+#planTab,
+#planTab a:hover,
+#planTab li.active>a:hover{
+  border-radius: 0px 0px 0px 0px;
+}
+
+/*border-radius: 10px 0px 0px 0px;*/
+
+/*----------------
+starting right here is just junk code: still associated with above
+#angular ul li.active>a {
+  border-radius: 10px 0px;
+}
+#angular li.active {
+  background-color: rgba(0,0,0, .2);
+}
+#angular a:hover {
+  background-color: rgba(255,255,255, .8);
+}
+*/
+-->
+
+
+
+The ABOUT columns before converting them to panels<!--
+      
+<div class="row well">
+  <div id="classes" class="col-sm-5">
+    <h2>About the Classes</h2>
+    <div class="row">
+      <h4>My office is located in Villa Crespo in Buenos Aires. Classes are customized to each student so that the material is interesting and memorable.</h4>
+      <ul class="list-unstyled">
+        <li>Conversational and Business English</li>
+        <li>Test Preparation</li>
+        <li>Individual and group classes</li>
+        <li>Online classes via videochat</li>
+        <li>Yoga classes in English</li>
+        <li>Discounted Community Classes</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="lauren" class="well col-sm-5 col-sm-offset-1"> 
+    <h2>About Me</h2>
+    <h4>I am not only a language teacher but also a lifelong language learner, so I understand the joys and difficulties involved in the process.</h4>
+    <ul class="list-unstyled text-left">
+      <li>Native speaker of US English</li>
+      <li>College-educated</li>
+      <li>TEFL certified</li>
+      <li>7 years experience teaching English</li>
+      <li>5 years teaching to Spanish-speakers</li>
+      <li>Fluent in castellano</li>
+    </ul>
+      <a href="#laurenModal" role="button" class="btn btn-primary center-block" data-toggle="modal">More info...</a>
+    </div>
+  </div> <!--end of "row" for About sections -->
+
+ OriginalContactButton <!-----------
+<button class="1 button" type="button" onclick="alert('Helloooooooo!!!')"><label><h3>Contact Lauren!</h3></label></button>
+ ----------------------------------->

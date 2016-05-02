@@ -1,0 +1,700 @@
+/*------------------------
+IMAGES
+-------------------------*/
+
+#flyer {
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 0px 0px 19px 3px white;
+}
+
+#cartoon{
+  width:40%;
+  height:30%;
+  max-height:225px;
+  max-width:160px;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+#laurenModal {
+  background-image: url(img/yogapic.jpg);
+  background-size: cover;
+}
+
+#googleAttr  {
+  max-width: 160px;
+}
+
+/*------------------------
+General Stylings
+-------------------------*/
+
+
+body {
+  /*the next 2 push the body down below the fixed header*/
+  position:relative; /*necessary for scrollspy*/
+  padding-top: 51px; /*51px will make flyer flush with navbar*/
+  /*any change in padding-top requires mods in scripts.js, too*/
+  background: url(img/blue-blur-shine.jpg);
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  color: #00ADEF;
+}
+
+h1, h2 {
+  color:darkblue;
+/*  font-family: Merriweather;*/
+}
+
+h2 {
+  font-size: 24px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+h3 {
+  font-size: 18px
+}
+  
+  
+h4{
+  font-size: 16px;
+}
+
+.well {
+  border: none;
+  border-radius: 10px;
+}
+
+* {
+  font-family: none;  /*deactivates bootstrap default font */
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.container,
+.container-fluid {
+  max-width: 1000px;
+}
+
+/*------------------------
+CUSTOM CLASSES
+-------------------------*/
+
+
+.narrow-container {
+  max-width: 720px !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*------------------------
+Modal styles
+-------------------------*/
+
+.modal-header,
+.modal-body {
+    padding: 4px;
+}
+
+.modal-footer {
+  padding: 5px;
+  margin-top: 0px;
+}
+
+#laCredentials ul {
+  padding-left: 13px;
+}
+
+#laCredentials h4 {
+  color:darkblue;
+}
+
+
+/* these 2 commands */
+.modal {   /*prevent the modal*/
+  overflow-y: auto; /*from causing everything*/
+}
+.modal-open {   /*to shift left*/
+  overflow: auto;/*when the modal opens and*/
+}/*shift right when it closes.*/
+/*it does so by keeping a second scroll bar from popping up, which caused the shift originally*/
+
+
+#mailtoLink {
+  color:darkblue;
+}
+
+
+/*------------------------
+Greeting section styles
+-------------------------*/
+#greeting h1 {
+  color:darkblue;
+/*  font-family: Merriweather;*/
+    font-size: 2em;
+    padding-top:10px;
+  }
+
+#greeting h4 {
+  color:darkblue;
+}
+
+/*------------------------
+Google Translate styles
+-------------------------*/
+
+#gTranslate{
+  margin-top: 50px;
+  border: 1px solid #00ADEF;
+  color: #00ADEF;
+}
+
+#gTranslate h4 {
+  margin-top: 0px;
+}
+
+#translation {
+  border: 1px solid #00ADEF;
+  height: 80px;
+  color:blue;
+  font-style: italic;
+}
+
+#translateBtn {
+  margin-top: 10px;
+}
+
+
+
+/*------------------------
+ABOUT section styles
+-------------------------*/
+
+#aboutPanels {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#miniPrinciples,
+#aboutPanels li {
+  color: ;
+}
+
+#classes {
+  border: 3px solid #00ADEF;
+}
+
+#lauren {
+  border: 3px solid darkblue;
+ }
+
+#philoIntro {
+  border: 3px solid lightcoral;
+ }
+
+
+#classes,
+#lauren,
+#philoIntro {
+  margin-top:30px;
+  border-radius: 10px;
+  padding: 0px;
+  background-image: url(img/quote_background_nowhite_noborder_faded.jpg);
+  background-size:cover; 
+  max-width: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#classes h4,
+#lauren h4,
+#philoIntro h4 {
+  margin: 0px;
+  font-size: 14px
+}
+
+#classes h2,
+#lauren h2,
+#philoIntro h2{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#classes .panel-body,
+#lauren .panel-body,
+#philoIntro .panel-body{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: darkblue;
+  background-color: lightgoldenrodyellow;
+}
+
+.panel-heading {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+#classes li,
+  #lauren li,
+  #philoIntro li {
+    font-size: 13px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+  }  
+
+/*the following makes the columns w/o a button the same size as
+the one with the button (About Lauren)*/
+#classes,
+#philoIntro {
+  margin-bottom: 0px;
+  padding-bottom: 21px;
+}
+
+#lauren a{
+ margin-top: 4px;
+ margin-bottom: 4px;
+}
+
+#lauren .btn {
+  background-color:;
+}
+
+/*------------------------
+YOGA section
+-------------------------*/
+
+#yoga {
+  text-align: right;
+  max-height: 250px;
+  margin-top: 30px;
+  background-image: url(img/yogapic.jpg);
+  background-position:right;
+  background-size:cover;
+  box-shadow: 0px 0px 3px 1px rgba(255,255,255,1);
+} 
+
+#yoga h1 { 
+  color: white;
+  font-size: 3em;
+  margin-bottom: 5px;
+}
+
+#yoga h4,
+#yoga h3,
+#yoga p {
+  color:white;
+}
+
+#yoga h3 {
+  margin-top: 0px;
+  margin-bottom:15px;  
+}
+
+#yoga h4 {
+  margin-bottom: 0px;
+  margin-right: 25px;
+}
+
+
+
+
+/*------------------------
+Philosophy/Angular section
+-------------------------*/
+
+section {
+  display:flex;
+  justify-content: center;
+}
+
+#angular a{
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  
+}
+
+#angular ul {
+  text-align: center;
+  cursor: default;
+  padding-right: 0px;
+  width: 110px;
+}
+
+#angular li {
+  border: .25px solid #00ADEF;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  font-size: 14px !important;
+}
+
+#angular .panel {
+  width: 80%;
+  max-width: 700px;
+  background-color: #00ADEF;
+  margin-bottom: 0px;
+  border-radius: 0px 10px 10px 0px;
+  color: lightgray;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+#angular .panel h2 {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+
+/*ANGULAR TAB FORMATTING*/
+
+#angular li.active>a, 
+#angular li.active>a:hover,
+#angular li.active>a:focus {
+  color: #fff;
+  background-color: #00ADEF;
+}
+
+#planTab {
+  background-color: lightgreen;
+}
+#adaptTab {
+  background-color: peachpuff;
+}
+#personalizeTab {
+  background-color: aquamarine;
+}
+#ondaTab {
+  background-color: lightgoldenrodyellow;
+}
+#focusTab {
+  background-color: lightsalmon;
+}
+#inspireTab {
+  background-color: lightpink;
+}
+#practiceTab {
+  background-color: lightblue !important;
+}
+
+
+
+.btn {
+  width: 50%;
+  max-width: 150px;
+  border-radius: 0px;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #00ADEF;
+}
+
+#submitBtn {
+  margin-top:;
+  margin-bottom:;
+}
+
+
+
+
+
+/*==========================================
+Contact Sections
+==========================================*/
+
+#contact {
+  margin-top: 30px;
+  max-height: 490px;
+  margin-bottom: 20px;
+}
+
+#form {
+  background-image: url(img/quote_background_nowhite_noborder_faded.jpg);
+  background-position:top left;
+  background-size:cover;
+  color: darkblue;
+  border: 3px solid yellowgreen;
+  margin-bottom: 0;
+  }
+
+form h2 {
+  margin-top: 0px;
+  padding-top: 0px; 
+}
+
+form .form-group {
+  margin-bottom: 5px;
+}
+
+#twitter {
+/*  border: 3px solid #55acee;*/
+  /*-- background-color: #55acee;   twitter blue --*/
+/*  max-height is determined by setting the data-height attribute of the anchor
+  tag for the twitter widget in the html document itself e.g. data-height="490"*/
+/*  border-radius: 10px !important;*/
+}
+
+footer {
+  padding-top: 20px;
+  height: 45px;
+  text-align: center;
+}
+
+footer h4 {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+#twitter-icon {
+  max-height:45px;
+}
+
+
+
+
+
+/*=====================
+Media Queries
+=======================*/
+
+
+
+
+
+/*--------------------
+(SUPER-SUPER-XS) -----------*/ 
+@media (min-width: 325px) {
+/*
+  #jsTarget {
+    background-color: darkslategray !important;
+  }
+*/
+  
+  #classes li,
+  #lauren li,
+  #philoIntro li {
+    font-size: 16px;
+}
+  
+  #philoIntro,
+  #contact {
+    max-width: 415px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+}
+  
+ 
+
+
+
+/*--------------------
+(SUPER-XS) -----------*/ 
+@media (min-width: 450px) {
+/*
+  #jsTarget {
+    background-color: yellowgreen !important;
+  }
+*/
+  
+  #cartoon {
+  margin-top:10px;
+  margin-left:10px;
+  height:225px;
+  width: 160px;
+  box-shadow: 0px 0px 35px 5px rgba(255,255,255,1);
+  }
+  
+  #greeting h1 {
+    margin-top: 10px;
+  }
+  
+  #greeting h4 {
+    font-size: 20px;
+  }
+  
+} 
+
+
+/*--------------------
+( XS breakpoint ) -----------*/
+@media (min-width: 535px) {
+/*
+  #jsTarget {
+    background-color: blue !important;
+  }
+*/
+  
+  #greeting {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  #greeting h1 {
+    font-size: 3em;
+    padding-top:20px;
+  }
+  
+  #greeting h4 {
+    font-size: 22px;
+  }
+    
+  #aboutPanels {
+    display:inline-flex;
+  }
+
+  #classes,
+  #lauren {
+    max-width: 48%;
+    justify-content:space-between;
+  }
+  
+  #classes li,
+  #lauren li {
+  font-size: 13px;
+  }
+  
+  #classes {
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+  }
+  
+  #yoga {
+    margin-bottom: 50px
+  }
+}
+  
+/*---------------------
+(Bootstrap -sm min-width: 768px) */
+@media (min-width: 768px) {
+/*
+  #jsTarget {
+    background-color: purple !important;
+  }
+*/
+  
+  .modal-header,
+  .modal-body {
+    padding: 5px;
+  }
+
+  #laCredentials ul {
+  padding-left: 25px;
+  }
+  
+  #greeting h4 {
+    font-size: 22px;
+  }
+     
+  #classes .panel,
+  #lauren .panel {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  #classes li,
+  #lauren li,
+  #philoIntro li {
+    font-size: 18px;
+    padding-bottom: 3px;
+    padding-top: 8px;
+  }
+  
+  #classes h4,
+  #lauren h4,
+  #philoIntro h4 {
+    margin: 0px;
+    font-size: 18px;
+  }
+
+  #classes h2,
+  #lauren h2,
+  #philoIntro h2{
+    font-size: 32px;
+    margin-top: 12px;
+  }
+
+  #yoga h1 {
+    font-size: 6em;
+  }
+  
+  #philoIntro {
+    max-width: 100%;
+  }
+  
+  section {
+    margin-top: 20px;
+    margin-right:auto;
+    margin-left: auto;
+  }
+  
+  section h2,
+  section p {
+    padding-left: 8px;
+    padding-right: 2px;
+  }
+  
+  #contact {
+  margin-top: 50px;
+  display:inline-flex;
+  max-width: 100%;
+  justify-content: space-around;
+  }
+  
+  #form {
+    width: 45%;
+  }
+  
+  #twitter {
+    width: 45%;
+  }
+  
+}
+
+/*---------------
+(Bootstrap -md min-width: 992px) */
+@media (min-width: 992px) { 
+/*
+  #jsTarget {
+    background-color: saddlebrown !important;
+  }
+*/
+  
+  #greeting {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+ 
+  section h2,
+  section p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  section p {
+    padding-top: 5px
+  }
+}
+ 
+
+
+/*----------------------
+(Bootstrap -lg min-width: 1200px) 
+@media (min-width: 1200px) {
+  #jsTarget {
+    background-color: fuchsia !important;
+  }
+}
+
+*/
