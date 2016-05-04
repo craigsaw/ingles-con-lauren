@@ -1,7 +1,6 @@
 /*jslint browser: true*/
 /*global $, click, jQuery, alert, console*/
 
-
 //add scrollspy to <body>
 $('body').scrollspy({target: "#jsTarget", offset: 54});
 
@@ -28,13 +27,3 @@ $('#main-nav a').on('click', function (event) {
   }
      );
 });
-
-
-//////////////////
-//the following is to make the miniature nav collapse on click
-///////////////////
-
-//$('.nav a').on(click, function () {
-//  'use strict';
-//  $('.navbar-collapse').collapse('hide');
-//});

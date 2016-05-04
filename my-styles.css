@@ -5,25 +5,12 @@ IMAGES
 #flyer {
   width: 100%;
   max-width: 1200px;
-  box-shadow: 0px 0px 19px 3px white;
-}
-
-#cartoon{
-  width:40%;
-  height:30%;
-  max-height:225px;
-  max-width:160px;
-  margin-left: 0px;
-  margin-right: 10px;
+  box-shadow: 0px 0px 30px 1px rgba(255,255,255,1);
 }
 
 #laurenModal {
   background-image: url(img/yogapic.jpg);
   background-size: cover;
-}
-
-#googleAttr  {
-  max-width: 160px;
 }
 
 /*------------------------
@@ -126,49 +113,23 @@ Modal styles
 /*it does so by keeping a second scroll bar from popping up, which caused the shift originally*/
 
 
-#mailtoLink {
-  color:darkblue;
-}
-
 
 /*------------------------
 Greeting section styles
 -------------------------*/
+
+
 #greeting h1 {
   color:darkblue;
-/*  font-family: Merriweather;*/
-    font-size: 2em;
-    padding-top:10px;
+  font-family: Merriweather;
+  font-size: 2em;
+  padding-top:10px;
   }
 
 #greeting h4 {
   color:darkblue;
 }
 
-/*------------------------
-Google Translate styles
--------------------------*/
-
-#gTranslate{
-  margin-top: 50px;
-  border: 1px solid #00ADEF;
-  color: #00ADEF;
-}
-
-#gTranslate h4 {
-  margin-top: 0px;
-}
-
-#translation {
-  border: 1px solid #00ADEF;
-  height: 80px;
-  color:blue;
-  font-style: italic;
-}
-
-#translateBtn {
-  margin-top: 10px;
-}
 
 
 
@@ -187,10 +148,10 @@ ABOUT section styles
   color: ;
 }
 
+/*  BORDERS ASSIGNED INDIVIDUALLY
 #classes {
   border: 3px solid #00ADEF;
 }
-
 #lauren {
   border: 3px solid darkblue;
  }
@@ -198,11 +159,14 @@ ABOUT section styles
 #philoIntro {
   border: 3px solid lightcoral;
  }
+*/
 
 
 #classes,
 #lauren,
 #philoIntro {
+  border: 3px solid darkblue;
+  box-shadow: 0px 0px 30px 1px rgba(255,255,255,1);
   margin-top:30px;
   border-radius: 10px;
   padding: 0px;
@@ -278,7 +242,7 @@ YOGA section
   background-image: url(img/yogapic.jpg);
   background-position:right;
   background-size:cover;
-  box-shadow: 0px 0px 3px 1px rgba(255,255,255,1);
+  box-shadow: 0px 0px 30px 1px rgba(255,255,255,1);
 } 
 
 #yoga h1 { 
@@ -423,8 +387,10 @@ Contact Sections
   background-position:top left;
   background-size:cover;
   color: darkblue;
-  border: 3px solid yellowgreen;
+/*  border: 3px solid yellowgreen;*/
   margin-bottom: 0;
+  border: 3px solid darkblue;
+  box-shadow: 0px 0px 30px 1px rgba(255,255,255,1);
   }
 
 form h2 {
@@ -441,7 +407,9 @@ form .form-group {
   /*-- background-color: #55acee;   twitter blue --*/
 /*  max-height is determined by setting the data-height attribute of the anchor
   tag for the twitter widget in the html document itself e.g. data-height="490"*/
-/*  border-radius: 10px !important;*/
+  border-radius: 10px !important;
+  border: 3px solid #55acee;
+  box-shadow: 0px 0px 30px 1px rgba(255,255,255,1);
 }
 
 footer {
@@ -459,20 +427,21 @@ footer h4 {
   max-height:45px;
 }
 
+#twitter-icon:hover {
+  background-color: lightgray;
+}
 
 
 
 
-/*=====================
-Media Queries
-=======================*/
+/*===============================================================
+
+| MEDIA QUERIES | MEDIA QUERIES | MEDIA QUERIES | MEDIA QUERIES |
+
+=================================================================*/
 
 
-
-
-
-/*--------------------
-(SUPER-SUPER-XS) -----------*/ 
+/*(SUPER-SUPER-XS)---------------------------------------------------------------------------------------------------------------*/ 
 @media (min-width: 325px) {
 /*
   #jsTarget {
@@ -496,26 +465,13 @@ Media Queries
 }
   
  
-
-
-
-/*--------------------
-(SUPER-XS) -----------*/ 
+/*(SUPER-XS)----------------------------------------------------------------------------------------------------------------------*/ 
 @media (min-width: 450px) {
 /*
   #jsTarget {
     background-color: yellowgreen !important;
   }
 */
-  
-  #cartoon {
-  margin-top:10px;
-  margin-left:10px;
-  height:225px;
-  width: 160px;
-  box-shadow: 0px 0px 35px 5px rgba(255,255,255,1);
-  }
-  
   #greeting h1 {
     margin-top: 10px;
   }
@@ -527,8 +483,7 @@ Media Queries
 } 
 
 
-/*--------------------
-( XS breakpoint ) -----------*/
+/*(Extra-small -xs breakpoint in Bootstrap )---------------------------------------------------------------------------------------------------*/
 @media (min-width: 535px) {
 /*
   #jsTarget {
@@ -575,8 +530,7 @@ Media Queries
   }
 }
   
-/*---------------------
-(Bootstrap -sm min-width: 768px) */
+/*(SMALL -sm breakpoint in Bootstrap, min-width: 768px)-------------------------------------------------------------------------------------*/
 @media (min-width: 768px) {
 /*
   #jsTarget {
@@ -594,7 +548,7 @@ Media Queries
   }
   
   #greeting h4 {
-    font-size: 22px;
+    font-size: 28px;
   }
      
   #classes .panel,
@@ -662,8 +616,8 @@ Media Queries
   
 }
 
-/*---------------
-(Bootstrap -md min-width: 992px) */
+/*(MEDIUM -md breakpoint in Bootstrap, min-width: 992px)---------------
+ */
 @media (min-width: 992px) { 
 /*
   #jsTarget {
@@ -689,12 +643,15 @@ Media Queries
  
 
 
-/*----------------------
-(Bootstrap -lg min-width: 1200px) 
+/*(LARGE -lg breakpoint in Bootstrap, min-width: 1200px) ----------------------------------------------------------------------*/
+
 @media (min-width: 1200px) {
+/*
   #jsTarget {
     background-color: fuchsia !important;
   }
+*/
+
+
 }
 
-*/
