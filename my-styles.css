@@ -235,6 +235,7 @@ the one with the button (About Lauren)*/
 YOGA section
 -------------------------*/
 
+/*
 #yoga {
   text-align: right;
   max-height: 250px;
@@ -266,8 +267,16 @@ YOGA section
   margin-bottom: 0px;
   margin-right: 25px;
 }
+*/
 
+#yoganew {
+  height: 300px;
+}
 
+#yoganew h1 {
+  font-family: merriweather;
+  font-size: 6em;
+}
 
 
 /*------------------------
@@ -525,9 +534,11 @@ footer h4 {
     padding-bottom: 0px;
   }
   
+/*
   #yoga {
     margin-bottom: 50px
   }
+*/
 }
   
 /*(SMALL -sm breakpoint in Bootstrap, min-width: 768px)-------------------------------------------------------------------------------------*/
@@ -579,9 +590,11 @@ footer h4 {
     margin-top: 12px;
   }
 
+/*
   #yoga h1 {
     font-size: 6em;
   }
+*/
   
   #philoIntro {
     max-width: 100%;
