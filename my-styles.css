@@ -228,54 +228,49 @@ the one with the button (About Lauren)*/
 }
 
 #lauren .btn {
-  background-color:;
+  background-color:darkslateblue;
+}
+
+#lauren .btn:hover {
+  background-color: darkblue;
 }
 
 /*------------------------
 YOGA section
 -------------------------*/
 
-/*
-#yoga {
-  text-align: right;
-  max-height: 250px;
-  margin-top: 30px;
-  background-image: url(img/yogapic.jpg);
-  background-position:right;
-  background-size:cover;
-  box-shadow: 0px 0px 30px 1px rgba(255,255,255,1);
-} 
 
-#yoga h1 { 
-  color: white;
-  font-size: 3em;
-  margin-bottom: 5px;
-}
-
-#yoga h4,
-#yoga h3,
-#yoga p {
-  color:white;
-}
-
-#yoga h3 {
-  margin-top: 0px;
-  margin-bottom:15px;  
-}
-
-#yoga h4 {
-  margin-bottom: 0px;
-  margin-right: 25px;
-}
-*/
 
 #yoganew {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#yoganewpic {
   height: 300px;
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
 #yoganew h1 {
-  font-family: merriweather;
+  font-family: merriweather, sans-serif;
   font-size: 6em;
+}
+
+#yoganew h2 {
+  font-family: merriweather, sans-serif;
+  margin-top: 0px;
+  margin-bottom:0px;
+  font-size: 26px; 
+}
+
+#yoganew p {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-right: 25px;
+  margin-left: 30px;
+  font-size: 16px;
+  color: darkblue;
 }
 
 
@@ -296,7 +291,7 @@ section {
 
 #angular ul {
   text-align: center;
-  cursor: default;
+  cursor: pointer;
   padding-right: 0px;
   width: 110px;
 }
