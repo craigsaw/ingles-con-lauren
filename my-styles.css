@@ -1,6 +1,27 @@
 /*------------------------
+FONTS
+-------------------------*/
+
+
+/*
+@font-face {
+font-family: La_light;
+src: url(fonts/La_light.otf) format("opentype");
+}
+
+@font-face {
+font-family: La_bold;
+font-weight: bold;
+src: url(fonts/La_bold.otf) format("opentype";
+}
+*/
+
+
+
+/*------------------------
 IMAGES
 -------------------------*/
+
 
 #flyer {
   width: 100%;
@@ -8,14 +29,37 @@ IMAGES
   box-shadow: 0px 0px 30px 1px rgba(255,255,255,1);
 }
 
-#laurenModal {
-  background-image: url(img/yogapic.jpg);
-  background-size: cover;
+
+/*
+#mandala {
+  max-height: 180px;
+  margin-top: 30px;
 }
+*/
+
+#IcL {
+  max-height: 100%; 
+}
+  
+
+
+/*------------------------
+Nav Menu
+-------------------------*/
+
+
+
+#main-nav li {
+  font-family: Merriweather;
+}
+
+
+
 
 /*------------------------
 General Stylings
 -------------------------*/
+
 
 
 body {
@@ -27,13 +71,16 @@ body {
   background-position: center;
   background-size:cover;
   background-attachment: fixed;
-  color: #00ADEF;
+  color: darkblue;
+  font-family: serif;
 }
 
-h1, h2 {
-  color:darkblue;
-/*  font-family: Merriweather;*/
+/*
+h1, 
+h2 {
+  font-family: Merriweather;
 }
+*/
 
 h2 {
   font-size: 24px;
@@ -55,13 +102,7 @@ h4{
   border-radius: 10px;
 }
 
-* {
-  font-family: none;  /*deactivates bootstrap default font */
-}
 
-.navbar-brand {
-  color: white !important;
-}
 
 .container,
 .container-fluid {
@@ -84,6 +125,22 @@ CUSTOM CLASSES
 Modal styles
 -------------------------*/
 
+
+
+
+/*
+#laurenModal {
+  background-image: url(img/quote_background_nowhite_noborder_faded.jpg);
+  background-size:;
+  background-position: center;
+}
+*/
+
+.modal-header {
+  background-color: lightslategray;
+  color: blue;
+}
+
 .modal-header,
 .modal-body {
     padding: 4px;
@@ -99,7 +156,7 @@ Modal styles
 }
 
 #laCredentials h4 {
-  color:darkblue;
+  color:blue;
 }
 
 
@@ -122,15 +179,22 @@ Greeting section styles
 #greeting h1 {
   color:darkblue;
   font-family: Merriweather;
-  font-size: 2em;
-  padding-top:10px;
+  font-size: 1.8em;
+  
   }
 
 #greeting h4 {
+  margin-top: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
   color:darkblue;
 }
 
-
+#greeting {
+  padding-top:10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 
 /*------------------------
@@ -209,7 +273,7 @@ ABOUT section styles
 #classes li,
   #lauren li,
   #philoIntro li {
-    font-size: 13px;
+    font-size: 12.3px;
     padding-bottom: 3px;
     padding-top: 5px;
   }  
@@ -235,42 +299,70 @@ the one with the button (About Lauren)*/
   background-color: darkblue;
 }
 
+/*
+.btn-hover {
+  font-weight: normal;
+  color: #333333;
+  cursor: pointer;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.btn-hover-alt {
+  font-weight: normal;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: inherit;
+  border-color: transparent;
+}
+*/
+
 /*------------------------
 YOGA section
 -------------------------*/
 
 
 
-#yoganew {
+#yoga {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-#yoganewpic {
+#yogapic {
   height: 300px;
   border-radius: 10px;
-  margin-right: 10px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#yoganew h1 {
+#yogaText {
+  padding-left: 10px;
+  margin-top: -10px;
+  display:block;
+  justify-content: center;
+  text-align: ceter;
+}
+
+#yoga h1 {
   font-family: merriweather, sans-serif;
-  font-size: 6em;
+  font-size: 3em;
+  margin-bottom: 0px;
 }
 
-#yoganew h2 {
+#yoga h2 {
   font-family: merriweather, sans-serif;
   margin-top: 0px;
   margin-bottom:0px;
   font-size: 26px; 
 }
 
-#yoganew p {
-  margin-top: 50px;
-  margin-bottom: 5px;
+#yoga p {
+  margin-top: 15px;
+  margin-bottom: 0px;
   margin-right: 25px;
-  margin-left: 30px;
+  margin-left: 0px;
   font-size: 16px;
-  color: darkblue;
 }
 
 
@@ -447,11 +539,9 @@ footer h4 {
 
 /*(SUPER-SUPER-XS)---------------------------------------------------------------------------------------------------------------*/ 
 @media (min-width: 325px) {
-/*
   #jsTarget {
-    background-color: darkslategray !important;
+    background-color: white !important;
   }
-*/
   
   #classes li,
   #lauren li,
@@ -471,12 +561,18 @@ footer h4 {
  
 /*(SUPER-XS)----------------------------------------------------------------------------------------------------------------------*/ 
 @media (min-width: 450px) {
-/*
   #jsTarget {
-    background-color: yellowgreen !important;
+    background-color: #222 !important;
   }
-*/
-  #greeting h1 {
+  
+  #IcL {
+    height: 30px;
+  }
+  .navbar-brand {
+    padding: 10px;
+  }
+  
+ #greeting h1 {
     margin-top: 10px;
   }
   
@@ -489,11 +585,9 @@ footer h4 {
 
 /*(Extra-small -xs breakpoint in Bootstrap )---------------------------------------------------------------------------------------------------*/
 @media (min-width: 535px) {
-/*
   #jsTarget {
     background-color: blue !important;
   }
-*/
   
   #greeting {
     margin-top: 40px;
@@ -538,11 +632,17 @@ footer h4 {
   
 /*(SMALL -sm breakpoint in Bootstrap, min-width: 768px)-------------------------------------------------------------------------------------*/
 @media (min-width: 768px) {
-/*
   #jsTarget {
-    background-color: purple !important;
+    background-color: #222 !important;
   }
-*/
+  
+  #IcL {
+    height: 30px;
+  }
+
+  .navbar-brand {
+    padding: 10px;
+  }
   
   .modal-header,
   .modal-body {
@@ -585,11 +685,25 @@ footer h4 {
     margin-top: 12px;
   }
 
-/*
+  #yogapic {
+    margin-right: 10px;
+    float:right;
+  }
+
   #yoga h1 {
     font-size: 6em;
   }
-*/
+
+  #yoga h2 {
+    margin-top: 3px;
+    font-size: 26px; 
+  }
+
+  #yoga p {
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 16px;
+  }
   
   #philoIntro {
     max-width: 100%;
@@ -627,11 +741,9 @@ footer h4 {
 /*(MEDIUM -md breakpoint in Bootstrap, min-width: 992px)---------------
  */
 @media (min-width: 992px) { 
-/*
   #jsTarget {
     background-color: saddlebrown !important;
   }
-*/
   
   #greeting {
     margin-top: 60px;
@@ -654,12 +766,9 @@ footer h4 {
 /*(LARGE -lg breakpoint in Bootstrap, min-width: 1200px) ----------------------------------------------------------------------*/
 
 @media (min-width: 1200px) {
-/*
   #jsTarget {
-    background-color: fuchsia !important;
+    background-color: #222 !important;
   }
-*/
-
 
 }
 
