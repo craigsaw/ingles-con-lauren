@@ -3,20 +3,26 @@ FONTS
 -------------------------*/
 
 
-/*
 @font-face {
-font-family: La_light;
-src: url(fonts/La_light.otf) format("opentype");
+  font-family: 'ICL_light';
+  src: url('fonts/ICL_light.eot'); 
+  src: url('fonts/ICL_light.otf') format('opentype');
 }
 
 @font-face {
-font-family: La_bold;
-font-weight: bold;
-src: url(fonts/La_bold.otf) format("opentype";
+  font-family: 'ICL_bold';
+  src: url('fonts/ICL_bold.eot'); 
+  src: url('fonts/ICL_bold.otf') format('opentype');
 }
-*/
 
 
+.fontLight {
+  font-family: 'ICL_light';
+}
+
+.fontBold {
+  font-family: 'ICL_bold';
+}
 
 /*------------------------
 IMAGES
@@ -28,14 +34,6 @@ IMAGES
   max-width: 1200px;
   box-shadow: 0px 0px 30px 1px rgba(255,255,255,1);
 }
-
-
-/*
-#mandala {
-  max-height: 180px;
-  margin-top: 30px;
-}
-*/
 
 #IcL {
   max-height: 100%; 
@@ -50,7 +48,8 @@ Nav Menu
 
 
 #main-nav li {
-  font-family: Merriweather;
+  font-family: 'ICL_light';
+  font-size: 16px;
 }
 
 
@@ -71,16 +70,15 @@ body {
   background-position: center;
   background-size:cover;
   background-attachment: fixed;
-  color: darkblue;
-  font-family: serif;
+  color: #222;
+  font-family: 'serif';
 }
 
-/*
 h1, 
 h2 {
-  font-family: Merriweather;
+  font-family: 'ICL_light';
+  text-transform: uppercase;
 }
-*/
 
 h2 {
   font-size: 24px;
@@ -126,19 +124,10 @@ Modal styles
 -------------------------*/
 
 
-
-
-/*
-#laurenModal {
+.modal-header,
+.modal-footer{
   background-image: url(img/quote_background_nowhite_noborder_faded.jpg);
-  background-size:;
-  background-position: center;
-}
-*/
-
-.modal-header {
-  background-color: lightslategray;
-  color: blue;
+  background-size:cover;
 }
 
 .modal-header,
@@ -177,21 +166,17 @@ Greeting section styles
 
 
 #greeting h1 {
-  color:darkblue;
-  font-family: Merriweather;
   font-size: 1.8em;
-  
-  }
+}
 
 #greeting h4 {
   margin-top: 15px;
   padding-left: 0px;
   padding-right: 0px;
-  color:darkblue;
 }
 
 #greeting {
-  padding-top:10px;
+  padding-top: 10px;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -207,11 +192,6 @@ ABOUT section styles
   margin-right: auto;
 }
 
-#miniPrinciples,
-#aboutPanels li {
-  color: ;
-}
-
 /*  BORDERS ASSIGNED INDIVIDUALLY
 #classes {
   border: 3px solid #00ADEF;
@@ -223,13 +203,16 @@ ABOUT section styles
 #philoIntro {
   border: 3px solid lightcoral;
  }
+
+#form { 
+  border: 3px solid yellowgreen;}
 */
 
 
 #classes,
 #lauren,
 #philoIntro {
-  border: 3px solid darkblue;
+  border: 3px solid #222;
   box-shadow: 0px 0px 30px 1px rgba(255,255,255,1);
   margin-top:30px;
   border-radius: 10px;
@@ -261,22 +244,24 @@ ABOUT section styles
 #philoIntro .panel-body{
   padding-top: 10px;
   padding-bottom: 10px;
-  color: darkblue;
+  /*this is where I'd change the color of the blurb 
+  that goes with the panel and list items:  
+  color: darkblue; */  
   background-color: lightgoldenrodyellow;
 }
 
 .panel-heading {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 #classes li,
-  #lauren li,
-  #philoIntro li {
-    font-size: 12.3px;
-    padding-bottom: 3px;
-    padding-top: 5px;
-  }  
+#lauren li,
+#philoIntro li {
+  font-size: 12.3px;
+  padding-bottom: 3px;
+  padding-top: 5px;
+}  
 
 /*the following makes the columns w/o a button the same size as
 the one with the button (About Lauren)*/
@@ -289,14 +274,6 @@ the one with the button (About Lauren)*/
 #lauren a{
  margin-top: 4px;
  margin-bottom: 4px;
-}
-
-#lauren .btn {
-  background-color:darkslateblue;
-}
-
-#lauren .btn:hover {
-  background-color: darkblue;
 }
 
 /*
@@ -316,6 +293,8 @@ the one with the button (About Lauren)*/
   border-color: transparent;
 }
 */
+
+
 
 /*------------------------
 YOGA section
@@ -341,17 +320,17 @@ YOGA section
   margin-top: -10px;
   display:block;
   justify-content: center;
-  text-align: ceter;
+  text-align:cente;
 }
 
 #yoga h1 {
-  font-family: merriweather, sans-serif;
+  font-family: serif;
   font-size: 3em;
   margin-bottom: 0px;
 }
 
 #yoga h2 {
-  font-family: merriweather, sans-serif;
+  font-family: 'ICL_light', sans-serif;
   margin-top: 0px;
   margin-bottom:0px;
   font-size: 26px; 
@@ -416,6 +395,9 @@ section {
 
 
 /*ANGULAR TAB FORMATTING*/
+#angular li a:hover {
+  background-color:rgba(255, 255, 255, .7);
+}
 
 #angular li.active>a, 
 #angular li.active>a:hover,
@@ -482,10 +464,8 @@ Contact Sections
   background-image: url(img/quote_background_nowhite_noborder_faded.jpg);
   background-position:top left;
   background-size:cover;
-  color: darkblue;
-/*  border: 3px solid yellowgreen;*/
   margin-bottom: 0;
-  border: 3px solid darkblue;
+  border: 3px solid #222;
   box-shadow: 0px 0px 30px 1px rgba(255,255,255,1);
   }
 
