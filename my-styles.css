@@ -324,13 +324,12 @@ YOGA section
 }
 
 #yoga h1 {
-  font-family: serif;
+  font-family: ICL_bold;
   font-size: 3em;
   margin-bottom: 0px;
 }
 
 #yoga h2 {
-  font-family: 'ICL_light', sans-serif;
   margin-top: 0px;
   margin-bottom:0px;
   font-size: 26px; 
