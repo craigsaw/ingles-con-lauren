@@ -1,4 +1,4 @@
-The main banner on the page was created by a graphic designer in Argentina named Diego Cuellar.
+The main banner on the page was designed by Diego Cuellar of Buenos Aires, Argentina.
 
 The yoga image is courtesy of http://karmym.blogspot.com/ .
 
