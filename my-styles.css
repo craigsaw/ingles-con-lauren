@@ -526,7 +526,7 @@ footer h4 {
 /*(SUPER-SUPER-XS)---------------------------------------------------------------------------------------------------------------*/ 
 @media (min-width: 325px) {
   #jsTarget {
-    background-color: lightgray !important;
+/*    background-color: lightgray !important;*/
   }
   
   #classes li,
@@ -548,7 +548,7 @@ footer h4 {
 /*(SUPER-XS)----------------------------------------------------------------------------------------------------------------------*/ 
 @media (min-width: 450px) {
   #jsTarget {
-    background-color: #222 !important;
+/*    background-color: #222 !important;*/
   }
   
   #IcL {
@@ -572,7 +572,7 @@ footer h4 {
 /*(Extra-small -xs breakpoint in Bootstrap )---------------------------------------------------------------------------------------------------*/
 @media (min-width: 535px) {
   #jsTarget {
-    background-color: blue !important;
+/*    background-color: blue !important;*/
   }
   
   #greeting {
@@ -619,7 +619,7 @@ footer h4 {
 /*(SMALL -sm breakpoint in Bootstrap, min-width: 768px)-------------------------------------------------------------------------------------*/
 @media (min-width: 768px) {
   #jsTarget {
-    background-color: #222 !important;
+/*    background-color: #222 !important;*/
   }
   
   #IcL {
@@ -732,7 +732,7 @@ footer h4 {
  */
 @media (min-width: 992px) { 
   #jsTarget {
-    background-color: saddlebrown !important;
+/*    background-color: saddlebrown !important;*/
   }
   
   #greeting {
@@ -757,7 +757,7 @@ footer h4 {
 
 @media (min-width: 1200px) {
   #jsTarget {
-    background-color: #222 !important;
+/*    background-color: #222 !important;*/
   }
 
 }
