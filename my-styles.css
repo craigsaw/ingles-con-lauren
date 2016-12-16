@@ -173,12 +173,14 @@ Greeting section styles
   margin-top: 15px;
   padding-left: 0px;
   padding-right: 0px;
+	font-family: "ICL_light";
 }
 
 #greeting {
-  padding-top: 10px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-top: 0px;
+  padding-left: px;
+  padding-right: 10px;
+  background-color: rgba(2, 51, 130, 0.1);
 }
 
 
@@ -320,12 +322,12 @@ YOGA section
   margin-top: -10px;
   display:block;
   justify-content: center;
-  text-align:cente;
+/*  text-align:center;*/
 }
 
 #yoga h1 {
   font-family: ICL_bold;
-  font-size: 3em;
+  font-size: 4em;
   margin-bottom: 0px;
 }
 
@@ -459,6 +461,10 @@ Contact Sections
   margin-bottom: 20px;
 }
 
+#formAddress{
+  display: none;
+}
+
 #form {
   background-image: url(img/quote_background_nowhite_noborder_faded.jpg);
   background-position:top left;
@@ -478,8 +484,7 @@ form .form-group {
 }
 
 #twitter {
-/*  border: 3px solid #55acee;*/
-  /*-- background-color: #55acee;   twitter blue --*/
+/*-- background-color: #55acee;   twitter blue --*/
 /*  max-height is determined by setting the data-height attribute of the anchor
   tag for the twitter widget in the html document itself e.g. data-height="490"*/
   border-radius: 10px !important;
@@ -504,6 +509,8 @@ footer h4 {
 
 #twitter-icon:hover {
   background-color: lightgray;
+	border-radius: 100px;
+  border: none;
 }
 
 
@@ -519,7 +526,7 @@ footer h4 {
 /*(SUPER-SUPER-XS)---------------------------------------------------------------------------------------------------------------*/ 
 @media (min-width: 325px) {
   #jsTarget {
-    background-color: white !important;
+    background-color: lightgray !important;
   }
   
   #classes li,
@@ -669,6 +676,10 @@ footer h4 {
     float:right;
   }
 
+  #yogaText{
+    text-align: left;
+  }    
+  
   #yoga h1 {
     font-size: 6em;
   }

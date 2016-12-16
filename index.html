@@ -80,8 +80,8 @@
 
 
 <!-- Greeting --> 
-      <div id="greeting" class="row center-block"> 
-        <h1><span class="fontBold">Hello, </span> future English-speaker!</h1>
+      <div id="greeting" class=" well row center-block"> 
+        <h1 class="fontBold">Hello, future English-speaker!</h1>
         <h4>I'm Lauren, and I have come from a far-away land to help you learn English! Lucky you! By learning English, you can create all sorts of great new possibilities and opportunities for yourself, and it is my job to help you dream big and reach your goals.</h4>
       </div>  <!-- end Greeting -->
             
@@ -93,7 +93,7 @@
 <!-- About Columns --> 
       <div id="aboutPanels">
         <div id="classes" class="panel">
-          <div class="panel-heading"><h2><span class="fontBold">About</span> the Classes</h2></div>
+          <div class="panel-heading"><h2><span class="fontBold">About </span>the Classes</h2></div>
           <div class="panel-body">
             <h4>Classes are customized to each student so that the material is interesting and memorable. Classes are held in Villa Crespo.</h4>
           </div>
@@ -140,7 +140,7 @@
         <div class="col-sm-6 col-xs-12">
           <img id="yogapic" class="" src="img/yoga2.jpg" alt="una foto de una mujer en una postura de yoga">
         </div>
-        <div id="yogaText" class="col-xs-12 col-sm-6 text-left">
+        <div id="yogaText" class="col-xs-12 col-sm-6 text-center">
           <h1>Yoga</h1>
           <h2>clases en ingl&eacute;s</h2>
           <p>para m&aacute;s informaci&oacute;n</p>
@@ -235,7 +235,7 @@
         <div id="contact">
           
           <div id="form" class="form well">
-            <form action="web address to process info goes here" method="">
+            <form action="https://formspree.io/inglesconlauren@gmail.com" method="POST">
               <h2><span class="fontBold">&iquest;And </span>You&#63;</h2>
               <div class="form-group">
                 <label for="name">Nombre:</label>
@@ -243,23 +243,24 @@
               </div>  
               <div class="form-group">
                 <label for="mail">Email:</label>
-                <input type="email" class="form-control" id="mail" placeholder="tu email" name="user_email">
+                <input type="email" class="form-control" id="mail" placeholder="tu email" name="_replyto">
               </div>  
               <div class="form-group">
                 <label for="mailconfirm">Confirmar email:</label>
-                <input type="email" class="form-control" id="mailconfirm" placeholder="tu email de nuevo" name="user_email_conf">
+                <input type="email" class="form-control" id="mailconfirm" placeholder="confirmar tu email" name="user_email_conf">
               </div>
+              <input id="formAddress" type="text" name="_gotcha"/>
               <div class="form-group">
                 <div id="checkbox_items">
                   <label>I am interested in:</label><br>
                   <div>
-                    <input type="checkbox" id="englishCheckbox" value="english_interest"/><label for="englishCheckbox">English Classes</label>
+                    <input type="checkbox" id="englishCheckbox" name="englishCheck" value="english_interest"/><label for="englishCheckbox">English Classes</label>
                   </div>
                   <div>
-                    <input type="checkbox" id="yogaCheckbox" value="yoga_interest"/><label for="yogaCheckbox">Yoga Classes</label>
+                    <input type="checkbox" id="yogaCheckbox" name="yogaCheck" value="yoga_interest"/><label for="yogaCheckbox">Yoga Classes</label>
                   </div>
                   <div>
-                    <input type="checkbox" id="otherCheckbox" value="english_interest"/><label for="otherCheckbox">Translation Services</label>
+                    <input type="checkbox" id="translationCheckbox" name="translationCheck" value="translation_interest"/><label for="translationCheckbox">Translation Services</label>
                   </div>
                 </div> <!-- checkbox items div -->
               </div>
@@ -267,7 +268,7 @@
                 <label for="questionscomments">&iquest;Preguntas&#63; &iquest;Comentarios&#63;</label>
                 <textarea class="form-control" id="questionscomments" name="questionscomments" placeholder="escribe aqui"></textarea>
               </div>
-              <a id="submitBtn" href="#formModal" role="button" class="btn btn-success center-block" data-toggle="modal">Submit</a>
+              <button id="submitBtn" role="button" class="btn btn-success center-block">Submit</button>
             </form>
           </div>   <!--/ContactForm div--> 
 <!-- twitter widget ---->
@@ -281,17 +282,16 @@
     </div> <!-- end of primary body container-->
     
     <footer>
-      <a href="https://twitter.com/InglesconLauren" target="_blank"><img class="text-center" id="twitter-icon" src="img/twitter_resized.png" alt="twitter-icon"></a>
+      <a href="https://twitter.com/InglesconLauren" target="_blank"><img class=" img-circle text-center" id="twitter-icon" src="img/twitter_resized.png" alt="twitter-icon"></a>
       <h4>Villa Crespo, Buenos Aires</h4>
-      <p>&copy; 2016 Ingl&eacute;s con Lauren</p>
+      <p>&copy; 2017 Ingl&eacute;s con Lauren</p>
     </footer>
 
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/scripts.js"></script>
     <script type="text/javascript" src="scripts/angular.min.js"></script> 
-    <script src="scripts/app.js"></script> 
-    <script src="scripts/translate.js"></script>
+    <script src="scripts/app.js"></script>
   </body>
    
 </html>
