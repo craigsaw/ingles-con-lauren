@@ -64,7 +64,7 @@ General Stylings
 body {
   /*the next 2 push the body down below the fixed header*/
   position:relative; /*necessary for scrollspy*/
-  padding-top: 51px; /*51px will make flyer flush with navbar*/
+  margin-top: 51px; /*51px will make flyer flush with navbar*/
   /*any change in padding-top requires mods in scripts.js, too*/
   background: url(img/blue-blur-shine.jpg);
   background-position: center;
