@@ -178,7 +178,6 @@ Greeting section styles
 
 #greeting {
   padding-top: 0px;
-  padding-left: px;
   padding-right: 10px;
   background-color: rgba(2, 51, 130, 0.1);
 }
@@ -493,8 +492,6 @@ form .form-group {
 }
 
 footer {
-  padding-top: 20px;
-  height: 45px;
   text-align: center;
 }
 
@@ -670,6 +667,10 @@ footer h4 {
     font-size: 32px;
     margin-top: 12px;
   }
+  
+  #yoga{
+    margin-bottom:70px; /*margin-top is 50, but the div above it has a margin-bottom of 20px;*/
+  }
 
   #yogapic {
     margin-right: 10px;
@@ -736,8 +737,8 @@ footer h4 {
   }
   
   #greeting {
-    margin-top: 60px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 50px; /* the ABOUT panels below this section have top-margin of 30px*/
   }
  
   section h2,
