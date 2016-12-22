@@ -1,7 +1,8 @@
 /*jslint browser: true*/
 /*global $, click, jQuery, alert, console*/
 
-
+// use this for adjustability:
+//  var navOffset = $('#jsTarget').height();
 
 // add scrollspy to <body> element of HTML
 $('body').scrollspy({target: "#jsTarget", offset: 54});
@@ -24,5 +25,4 @@ $('#main-nav a').on('click', function (event) {
   });
 });
 
-//  var navOffset;
-//  navOffset = $('#jsTarget').height();
+
