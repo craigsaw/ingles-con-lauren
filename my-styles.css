@@ -64,7 +64,7 @@ General Stylings
 body {
   /*the next 2 push the body down below the fixed header*/
   position:relative; /*necessary for scrollspy*/
-  margin-top: 51px; /*51px will make flyer flush with navbar*/
+  padding-top: 51px; /*51px will make flyer flush with navbar*/
   /*any change in padding-top requires mods in scripts.js, too*/
   background: url(img/blue-blur-shine.jpg);
   background-position: center;
@@ -89,8 +89,7 @@ h2 {
 h3 {
   font-size: 18px
 }
-  
-  
+   
 h4{
   font-size: 16px;
 }
@@ -99,8 +98,6 @@ h4{
   border: none;
   border-radius: 10px;
 }
-
-
 
 .container,
 .container-fluid {
@@ -339,7 +336,7 @@ YOGA section
 #yoga p {
   margin-top: 15px;
   margin-bottom: 0px;
-  margin-right: 25px;
+  margin-right: 0px;
   margin-left: 0px;
   font-size: 16px;
 }
@@ -519,11 +516,32 @@ footer h4 {
 
 =================================================================*/
 
+@media (min-width: 225px) {
+  #IcL {
+    height: 95%;  
+  }
+  
+  #yoga h2{
+    font-size: 22px;
+  }
+}
+
+
+
+
+
 
 /*(SUPER-SUPER-XS)---------------------------------------------------------------------------------------------------------------*/ 
 @media (min-width: 325px) {
   #jsTarget {
 /*    background-color: lightgray !important;*/
+  }
+  
+  #IcL {
+    height: 25px;
+  }
+  .navbar-brand {
+    padding-top: 13px;
   }
   
   #classes li,
@@ -552,7 +570,7 @@ footer h4 {
     height: 30px;
   }
   .navbar-brand {
-    padding: 10px;
+    padding: 10.5px;
   }
   
  #greeting h1 {
@@ -619,10 +637,6 @@ footer h4 {
 /*    background-color: #222 !important;*/
   }
   
-  #IcL {
-    height: 30px;
-  }
-
   .navbar-brand {
     padding: 10px;
   }
