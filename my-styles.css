@@ -326,13 +326,9 @@ the one with the button (About Lauren)*/
 }
 */
 
-
-
 /*------------------------
 YOGA section
 -------------------------*/
-
-
 
 #yoga {
   margin-top: 50px;
@@ -353,7 +349,6 @@ YOGA section
   margin-top: -10px;
   display:block;
   justify-content: center;
-/*  text-align:center;*/
 }
 
 #yoga h1 {
@@ -387,8 +382,8 @@ section {
 }
 
 #angular a{
-  padding-top: 7px !important;
-  padding-bottom: 7px !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
   
 }
 
@@ -413,7 +408,7 @@ section {
   background-color: #00ADEF;
   margin-bottom: 0px;
   border-radius: 0px 10px 10px 0px;
-  color: lightgray;
+  color: white;
   padding-left: 7px;
   padding-right: 7px;
 }
@@ -439,7 +434,7 @@ section {
 }
 
 #planTab {
-  background-color: lightgreen;
+  background-color: lightgoldenrodyellow;
 }
 #adaptTab {
   background-color: peachpuff;
@@ -447,20 +442,12 @@ section {
 #personalizeTab {
   background-color: aquamarine;
 }
-#ondaTab {
-  background-color: lightgoldenrodyellow;
-}
 #focusTab {
   background-color: lightsalmon;
 }
-#inspireTab {
-  background-color: lightpink;
-}
 #practiceTab {
-  background-color: lightblue !important;
+  background-color: lightpink !important;
 }
-
-
 
 .btn {
   width: 50%;
@@ -474,11 +461,9 @@ section {
 }
 
 #submitBtn {
-  margin-top:;
+  margin-top:40px;
   margin-bottom:;
 }
-
-
 
 
 
@@ -540,7 +525,6 @@ footer h4 {
 /*  box-shadow: 0px 0px 30px 1px rgba(255,255,255,1);*/
   background-color: lavender;
 }
-
 
 
 
@@ -807,6 +791,10 @@ footer h4 {
 @media (min-width: 1200px) {
   #jsTarget {
 /*    background-color: #222 !important;*/
+  }
+  
+  #flyer{
+    margin-top: 40px;
   }
 
 }
