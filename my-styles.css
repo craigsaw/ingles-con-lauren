@@ -34,28 +34,6 @@ FONTS
   font-family: 'DINNextLTPro-Bold';
 }
 
-/*
-@font-face {
-  font-family: 'ICL_light';
-  src: url('fonts/ICL_light.eot'); 
-  src: url('fonts/ICL_light.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'ICL_bold';
-  src: url('fonts/ICL_bold.eot'); 
-  src: url('fonts/ICL_bold.otf') format('opentype');
-}
-
-
-.fontLight {
-  font-family: 'ICL_light';
-}
-
-.fontBold {
-  font-family: 'ICL_bold';
-}
-*/
 
 /*------------------------
 IMAGES
@@ -73,7 +51,6 @@ IMAGES
 }
   
 
-
 /*------------------------
 Nav Menu
 -------------------------*/
@@ -86,13 +63,14 @@ Nav Menu
 }
 
 
-
-
 /*------------------------
 General Stylings
 -------------------------*/
 
 
+.margin-top-md {
+	margin-top: 15px !important;
+}
 
 body {
   /*the next 2 push the body down below the fixed header*/
@@ -461,7 +439,7 @@ section {
 }
 
 #submitBtn {
-  margin-top:40px;
+  margin-top:20px;
   margin-bottom:;
 }
 

@@ -32,19 +32,21 @@
         </div> 
         <nav class= "collapse navbar-collapse" id="main-nav" data-toggle="collapse" data-target=".navbar-collapse.in">
           <ul class="nav navbar-nav navbar-right text-center" role="tablist">
-            <li class="active"><a href="#home">Inicio</a></li>
-            <li class=""><a href="#classes">Las Detalles</a></li>
-            <li class=""><a href="#philosophy">Mi Filosof&iacute;a</a></li>
-            <li class=""><a href="#contact">Contacto</a></li>
+            <li id="inicioTab" class="mainNavTab active"><a href="#home">Inicio</a></li>
+            <li id="detallesTab" class="mainNavTab"><a href="#classes">Los Detalles</a></li>
+            <li id="filosofiaTab" class="mainNavTab"><a href="#philosophy">Mi Filosof&iacute;a</a></li>
+            <li id="contactoTab" class="mainNavTab"><a href="#contact">Contacto</a></li>
           </ul>
         </nav>
       </div>
     </div> 
      <!-- end navbar  -->
-
+    <div id="home"></div> 
+    <img id="flyer" class="hidden-xs center-block" src="img/InglesconLaurenFlyer.jpg" alt="Inglés con Lauren, clases particulares de ingles, conversacion y gramatica, inglesconlauren.com">
+      
     <!-- begin main body container div --> 
-    <div class="container" id="home">
-      <img id="flyer" class="hidden-xs center-block" src="img/InglesconLaurenFlyer.jpg" alt="Inglés con Lauren, clases particulares de ingles, conversacion y gramatica, inglesconlauren.com">
+    <div class="container">
+      
       <!-- Greeting --> 
       <div id="greeting" class=" well row center-block"> 
         <h1 class="fontBold">Hello!</h1>
@@ -63,13 +65,8 @@
           <div class="panel-heading"><h2><span class="fontBold">Las </span>Clases</h2></div>
           <div class="panel-body">
             <h4>
-                Las clases se basan en las necesidades y gustos de cada student.
-                Se dan en Chacarita y Coghlan.
-<!--
-                Cada persona aprende de manera diferente.  Ense&ntilde;o para que se sientan c&oacute;modos 
-                generando clases muy productivas y efectivas teniendo como objetivo 
-                que el alumno pueda percibir, en poco tiempo, grandes resultados. 
--->
+							Las clases se basan en las necesidades y gustos de cada student.  Intento dar clases muy productivas para grandes resultados.
+							Se dan en Chacarita y Coghlan.
             </h4>
           </div>
           <ul class="list-group">
@@ -85,8 +82,10 @@
         <div id="lauren" class="panel">
           <div class="panel-heading"><h2><span class="fontBold">Sobre</span>&nbsp;Mi</h2></div>
           <div class="panel-body">
-            <h4>No soy solamente una profesora de ingl&eacute;s, soy student de otros idiomas, por lo tanto, 
-              entiendo el placer y los desaf&iacute;os que existen a lo largo del proceso.</h4>
+            <h4>
+							No soy solamente una profesora de ingl&eacute;s, soy student de otros idiomas, por lo tanto, 
+              entiendo el placer y los desaf&iacute;os que existen a lo largo del proceso.
+						</h4>
           </div>
           <ul class="list-group">
             <li class="list-group-item">- Anglohablante nativo</li>
@@ -98,7 +97,7 @@
             </li>
             <li class="list-group-item">
                 - <script language="JavaScript" type="text/javascript" >document.write(new Date().getFullYear() - 2011);</script>
-                a&ntilde;os ense&ntilde;ando ingl&eacute;s a hispanohablantes
+                a&ntilde;os ense&ntilde;ando a hispanohablantes
             </li>
             <li class="list-group-item">- Avanzada en castellano</li>
           </ul>
@@ -134,7 +133,8 @@
                 interior... y eso, como resultado, lo hace m&aacute;s f&aacute;cil a la hora de expresarse en otra lengua.
               <br>
               <br>
-              Cuando hay desaf&iacute;os en la clase, tengo estos principios:</h4>
+              Cuando hay desaf&iacute;os en la clase, tengo estos principios:
+						</h4>
           </div> 
 
           <!-- miniature summaries of philosophy items for small screen sizes -->
@@ -162,8 +162,8 @@
                 <div ng-show="tab.isSet(1)">
                   <h2>Adaptar</h2>
                   <p class="lead">
-                    Las cosas no siempre salen seg&uacute;n lo planeado, por lo que es importante adaptarse a las nuevas 
-                    circunstancias y reconsiderar las estrategias anteriores. Si una cosa no funciona, intente con otra cosa.
+                      Las cosas no siempre salen seg&uacute;n lo planeado, por lo que es importante adaptarse a las nuevas 
+                      circunstancias y reconsiderar las estrategias anteriores. Si una cosa no funciona, intente con otra cosa.
                   </p>
                 </div>
                 <div ng-show="tab.isSet(2)">
@@ -216,48 +216,44 @@
               <h2><span class="fontBold">&iquest;Y </span>Vos&#63;</h2>
               <div class="form-group">
                 <label for="name">Nombre:</label>
-                <input type="text" class="form-control" id="name" placeholder="tu nombre" name="user_name">
+                <input type="text" class="form-control" id="name" name="user_name">
               </div>  
-              <div class="form-group">
+              <div class="form-group margin-top-md">
                 <label for="mail">Email:</label>
-                <input type="email" class="form-control" id="mail" placeholder="tu email" name="_replyto">
-              </div>  
-              <!-- <div class="form-group">
-                <label for="mailconfirm">Confirmar email:</label>
-                <input type="email" class="form-control" id="mailconfirm" placeholder="confirmar tu email" name="user_email_conf">
-              </div> -->
-              <input id="formAddress" type="text" name="_gotcha"/>
-              <div class="form-group">
-                <div id="checkbox_items">
-                  <label>Me interesa(n):</label><br>
-                  <div>
-                    <input type="checkbox" id="englishCheckbox" name="englishCheck" value="english_interest"/>
-                    <label for="englishCheckbox">&nbsp;Las clases de ingl&eacute;s</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="yogaCheckbox" name="yogaCheck" value="yoga_interest"/>
-                    <label for="yogaCheckbox">&nbsp;Las clases de Yoga</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="translationCheckbox" name="translationCheck" value="translation_interest"/>
-                    <label for="translationCheckbox">&nbsp;Traducci&oacute;n</label>
-                  </div>
-                </div> <!-- checkbox items div -->
+                <input type="email" class="form-control" id="mail" name="_replyto">
               </div>
-              <div class="form-group">
+              <input id="formAddress" type="text" name="_gotcha"/>
+							<div id="checkbox_items" class= "form-group margin-top-md">
+								<label>Me interesa(n):</label><br>
+								<div>
+									<input type="checkbox" id="englishCheckbox" name="englishCheck" value="english_interest"/>
+										&nbsp;Las clases de ingl&eacute;s
+								</div>
+								<div>
+									<input type="checkbox" id="yogaCheckbox" name="yogaCheck" value="yoga_interest"/>
+										&nbsp;Las clases de Yoga
+								</div>
+								<div>
+									<input type="checkbox" id="translationCheckbox" name="translationCheck" value="translation_interest"/>
+										&nbsp;Servicios de traducci&oacute;n
+								</div>
+							</div> 
+						<!-- end checkbox items -->
+              <div class="form-group margin-top-md">
                 <label for="questionscomments">&iquest;Preguntas&#63; &iquest;Comentarios&#63;</label>
-                <textarea class="form-control" id="questionscomments" name="questionscomments" placeholder="escribe aqui"></textarea>
+                <textarea class="form-control" id="questionscomments" name="questionscomments"></textarea>
               </div>
               <button id="submitBtn" role="button" class="btn btn-success center-block">Enviar</button>
             </form>
-          </div>   <!--/ContactForm div-->
+          </div>
+          <!-- End Contact Form section-->
 
           <!-- twitter widget -->
           <div id="twitter" class="hidden-xs">  
             <a class="twitter-timeline" href="https://twitter.com/InglesconLauren" data-widget-id="726936157297119232" data-chrome="nofooter" data-height="490">Tweets by @InglesconLauren</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </div> 
-          <!-- end twitter div-->
+          <!-- end twitter-->
         </div>
       </div> <!-- end of narrow container around contact section -->
       <!-- end contact section-->
